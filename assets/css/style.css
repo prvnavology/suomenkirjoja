@@ -1,0 +1,1115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+/* Global CSS Start */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    word-break: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+p {
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    line-height: 1.7;
+    margin-bottom: 3px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+button,
+input[type=text],
+input[type=submit] {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.py-3 {
+    padding: 30px 0;
+}
+
+.pb-3 {
+    padding-bottom: 30px;
+}
+
+.pb-2 {
+    padding-bottom: 20px;
+}
+
+.py-5 {
+    padding: 50px 0;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+.pt-5 {
+    padding-top: 50px;
+}
+
+.pb-4 {
+    padding-bottom: 40px;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 35px;
+}
+
+/* Global CSS End */
+
+
+/*Header CSS Start */
+.top-logo img {
+    text-align: center;
+    width: 100%;
+    max-width: 270px;
+    vertical-align: middle;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+    background-color: #222222;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.main-menu ul li a {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    font-weight: 600;
+    position: relative;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main-menu ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #fff;
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0%;
+}
+
+.main-menu ul li a:hover:after,
+.main-menu ul li a.active:after {
+    width: 100%;
+}
+
+.main-menu ul li a:hover,
+.main-menu ul li a.active {
+    color: #fff;
+}
+
+.close-icon {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    color: #fff;
+    width: 30px;
+    text-align: right;
+    cursor: pointer;
+    margin: auto 0;
+    font-size: 25px;
+    z-index: 60;
+}
+
+/* Header CSS End */
+
+/* Section Heading CSS Start */
+h2.section-heading {
+    font-size: 40px;
+    line-height: 1.5;
+    color: #008080;
+    margin: 0 auto;
+}
+
+/* Section Heading CSS End */
+
+/* Banner Section CSS Start */
+.main-banner {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.banner-image {
+    height: 600px;
+    width: 100%;
+}
+.pages-banner-image {
+    height: 450px;
+}
+
+.banner-image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0 0 0/60%);
+    background-blend-mode: multiply;
+    overflow: hidden;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 55px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.banner-text h3 {
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+/* Banner Section  CSS End */
+
+.pages-intro-wrapper p {
+    color: #787878;
+    max-width: 1100px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+/* Home Menu Cards CSS Start */
+.home-menu-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-menu-cards {
+    width: 23%;
+    height: 100%;
+    position: relative;
+    transition: 0.4s all ease-in-out;
+}
+.home-menu-cards:hover{
+    transform: translateY(-4px);
+    box-shadow: rgba(0, 0, 0) 0px 5px 15px;
+}
+
+.home-menu-cards-image {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.home-menu-cards-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-menu-cards-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-blend-mode: multiply;
+    background-color: rgba(0 0 0/55%);
+    width: 100%;
+    height: 100%;
+}
+
+.home-menu-cards-text a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-menu-cards-text a h3 {
+    font-size: 22px;
+    color: #fff;
+}
+
+/* Home Menu Cards CSS End*/
+
+
+/* Home Books Cards CSS Start */
+.s1,
+.s2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-books-card {
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s all ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 7px 15px;
+    border-radius: 10px;
+}
+
+.home-books-card:hover {
+    transform: translateY(-4px);
+    box-shadow: #008080 0px 3px 20px 2px;
+}
+
+.s1 .home-books-card {
+    width: 32%;
+    height: 430px;
+}
+
+.s1 .pen-white,
+.s2 .pen-white,
+.pen-color {
+    height: 15px;
+    width: 15px;
+    object-fit: cover;
+}
+
+.s1 .home-books-card-image,
+.s2 .home-books-card-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.s1 .home-books-card-image img,
+.s2 .home-books-card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-books-card-content {
+    position: absolute;
+    top: 100%;
+    color: #fff;
+    padding: 15px;
+    background-color: rgba(0 0 0/60%);
+    height: 100%;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.s1 .home-books-card:hover .home-books-card-content {
+    top: 30%;
+}
+
+.home-books-card-content h3 {
+    font-size: 22px;
+}
+
+.home-books-card-content h4 {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.s1 .cards-external-btn,
+.s2 .cards-external-btn {
+    color: #000;
+    background: #ff7900;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.s1 .cards-external-btn:hover,
+.s2 .cards-external-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Home Books Cards CSS End */
+
+/* Home Page signup CSS Start */
+.pages-signup-section {
+    background-color: #222222;
+}
+
+.pages-signup-wrapper {
+    text-align: center;
+    padding: 30px 0;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.pages-signup-wrapper h3 {
+    padding: 0 10px;
+}
+
+.pages-signup-input-wrapper {
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+input.pages-signup-input {
+    width: 40%;
+    display: inline-block;
+    font-size: 16px;
+    padding: 13px 25px;
+    outline: none;
+    border: 1px solid #666;
+    line-height: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+.butn {
+    display: inline-block;
+    padding: 13px 25px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: 0.3s all ease-in-out;
+    line-height: 20px;
+}
+
+.pages-signup-submit-button {
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 0 10px 10px 0;
+    background: #ff7900;
+}
+
+.pages-signup-submit-button:hover {
+    background-color: #fff;
+    color: #008080;
+    box-shadow: #008080 0px 3px 20px 2px;
+}
+
+.pages-signup-wrapper h3 {
+    font-size: 30px;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    line-height: normal;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Home Page signup CSS End */
+
+/* Best Seller CSS Start */
+.s2 .home-books-card {
+    height: 350px;
+    width: 24%;
+}
+
+.s2 .home-books-card:hover .home-books-card-content {
+    top: 40%;
+}
+
+/* Best Seller CSS Start */
+
+.home-why-choose-us-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-why-choose-us-cards {
+    width: 32%;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #222222;
+    border-radius: 8px;
+    border: 5px solid #222222;
+    overflow: hidden;
+    position: relative;
+    /* transition: color 0.5s, box-shadow 0.3s; */
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+}
+
+.home-why-choose-us-cards::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform: translateY(100%);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.home-why-choose-us-cards:hover::before {
+    transform: translateY(0);
+}
+
+.home-why-choose-us-cards:hover {
+    color: #000;
+    z-index: 10;
+}
+
+
+
+
+.rate-cards-icon i {
+    margin-bottom: 10px;
+}
+
+.home-why-choose-us-cards h3 {
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.home-why-choose-us-cards p {
+    color: #fff;
+}
+
+.home-why-choose-us-cards:hover h3,
+.home-why-choose-us-cards:hover p,
+.home-why-choose-us-cards:hover .rate-icon {
+    color: #000;
+}
+
+
+.rate-icon {
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: scale(1.1) translateY(-3px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+
+
+/* Accordion CSS Start */
+#faq-heading {
+    color: #fff;
+}
+
+
+.accordion {
+    background-color: #222222;
+    border-radius: 0px;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 0fr;
+    overflow: hidden;
+    transition: grid-template-rows .3s cubic-bezier(.19, 1, .22, 1);
+    margin: .75rem 0;
+}
+
+.accordion .top {
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .9375rem;
+    display: flex;
+    position: relative
+}
+
+.accordion .top .text {
+    font-size: 1.125rem;
+    font-weight: 600;
+    white-space: wrap;
+    color: #ffffff;
+}
+
+.accordion .top img {
+    width: 1.5rem;
+    align-self: flex-start;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
+    filter: brightness(0) invert(1);
+}
+
+.accordion .top input {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+    background: none;
+}
+
+.accordion .top .text {
+    font-size: 1.125rem;
+    white-space: wrap;
+    color: #fff;
+    font-weight: 400;
+}
+
+.accordion .bottom .text p {
+    padding: 10px 0;
+}
+
+.accordion .top img {
+    width: 1.5rem;
+    align-self: flex-start;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    transition: transform .3s cubic-bezier(.175, .885, .32, 1.275);
+    filter: brightness(0) invert(1);
+}
+
+.accordion .top input {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    appearance: none;
+    width: 100%;
+    background: none;
+}
+
+.accordion .bottom {
+    padding-inline: 1.7rem;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.19, 1, .22, 1);
+    background-color: #fff;
+    border: 1px solid #222222;
+}
+
+.accordion .bottom .text {
+    margin-left: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+}
+
+.accordion:has(input:checked) {
+    grid-template-rows: .1fr 1fr
+}
+
+.accordion:has(input:checked) .top img {
+    transform: rotateZ(45deg)
+}
+
+.accordion:has(input:checked) {
+    grid-template-rows: .1fr 1fr
+}
+
+.accordion:has(input:checked) .top img {
+    transform: rotateZ(180deg);
+    content: url("../images/minus-sign.png");
+
+
+}
+
+.accordion:has(input) .top img {
+    content: url("../images/plus.png");
+    width: 100%;
+    transition: all 0.3s linear;
+    max-width: 15px;
+    margin: auto 0;
+}
+
+/* Accordion CSS End */
+
+/* Footer CSS Start */
+.footer {
+    width: 100%;
+    background-color: #222222;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo-bottom img {
+    width: 100%;
+    max-width: 270px;
+}
+
+.footer-items {
+    width: 30%;
+}
+
+.footer-items h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #fff;
+    text-align: left;
+}
+
+.footer-items .social-icons {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.footer-items ul li a {
+    padding: 3px 0;
+}
+
+.footer .footer-items ul li a {
+    transition: 0.6s all ease;
+    font-size: 17px;
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.footer .footer-items ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 1px #fff;
+    transition: all 300ms ease-in-out;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0%;
+}
+
+.footer .footer-items ul li a:hover {
+    transform: translateX(3px);
+}
+
+.footer-icons {
+    min-width: 20px;
+    margin-right: 6px;
+}
+
+
+.footer-items ul li a:hover:after {
+    width: 100%;
+}
+
+.ssl-certificate img {
+    max-width: 160px;
+}
+
+.copyright {
+    padding: 15px 0;
+    text-align: center;
+    margin: auto 0;
+}
+
+.copyright p {
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.disclaimer {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #fff;
+}
+.disclaimer h3 {
+    margin-bottom: 15px;
+}
+
+.disclaimer p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* Footer CSS End */
+
+/* Social Icons CSS Start */
+.social-icons {
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.social-icons i {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: #fff;
+    color: #000;
+    line-height: normal;
+    margin: 0 5px;
+    transition: 0.3s all ease-in-out;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.social-icons i:hover {
+    transform: translateY(-2px);
+    color: #fff;
+    box-shadow: #fff 0px 4px 8px;
+}
+
+.social-icons i.facebook:hover {
+    background-color: #116af9;
+}
+
+.social-icons i.twitter:hover {
+    background-color: #1da1f2;
+}
+
+.social-icons i.instagram:hover {
+    background-color: #da1090;
+}
+
+/* Social Icons CSS End */
+
+
+
+/* Pages CSS Start */
+.pages-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.pages-cards {
+    width: 49%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: 1px solid #cbc8c8;
+}
+.pages-cards-image {
+    height: 410px;
+    width: 100%;
+    overflow: hidden;
+}
+.pages-cards-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+.pages-cards-content {
+    padding:15px 10px;
+}
+.pages-cards-content h3 {
+    font-size: 25px;
+    color: #ff7900;
+}
+.pages-cards-content h4 {
+    font-size: 17px;
+    margin: 10px 0;
+    border: 1px solid #ff7900;
+    padding: 7px;
+    display: inline-block;
+    border-radius: 10px;
+}
+.pages-cards-content p {
+    color: #787878;
+    padding-bottom: 10px;
+}
+
+.pen-color {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.moretextt {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+.btn-darkred-block,.external-pages-link-btn {
+    background-color: #ff7900;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+    line-height: normal;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn-darkred-block:hover ,.external-pages-link-btn:hover{
+    background: #fff;
+    color: #000;
+    border:1px solid #ff7900
+}
+
+
+
+.text-left {
+    display: flex;
+    gap: 20px;
+}
+
+/* Pages CSS End */
+
+/* Other Pages CSS Start */
+.sub-pages-group span.heading-like {
+    color: #ff7900;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.sub-pages-content-section {
+background-color: #9e9ea1;
+}
+
+.sub-pages-group {
+    margin-bottom: 35px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #787878 0px 5px 10px;
+    background-color: #fff;
+}
+
+.sub-pages-group:last-child {
+    margin-bottom: 0px;
+}
+
+.sub-pages-group h3 {
+    font-size: 27px;
+    margin-bottom: 10px;
+    color: #008080;
+}
+
+.sub-pages-group h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sub-pages-group p {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #787878;
+}
+
+.sub-pages-group ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    margin-left: 17px;
+}
+
+.sub-pages-group h3 a {
+    color: #ff7900;
+    transition: 0.3s all ease-in-out;
+}
+
+.sub-pages-group h3 a:hover {
+    color: red;
+    transform: translateX(2px);
+}
+
+.sub-pages-group p a {
+    color: #ff7900;
+    font-weight: 600;
+    font-size: 17px;
+    transition: 0.3s all ease-in-out;
+}
+
+.sub-pages-group p a:hover {
+    color: red;
+    transform: translateX(2px);
+}
+
+.sub-pages-group ul {
+    margin: 10px auto;
+}
+
+/* Other CSS End */
+
+
+
+
+
+
+
+/* Cookies CSS Start */
+.wrapper {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    background-color: #280B70;
+    padding: 15px 25px 22px;
+    transition: all 1s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.show {
+    bottom: 0;
+}
+
+.info {
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.button {
+    width: calc(40% / 2 - 10px);
+    padding: 8px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #cf2d5e;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    font-weight: 600;
+}
+
+.button:hover {
+    border-color: #000;
+    color: #cf2d5e;
+    background-color: #fff;
+}
+
+/* Cookies CSS End */
+
+
